@@ -9,6 +9,7 @@ let package = Package(
             name: "TreeSitterLua",
             path: "Sources/TreeSitterLua",
             sources: ["src/parser.c", "src/scanner.c"],
+            resources: [.copy("queries")],
             publicHeadersPath: "include",
             cSettings: [.headerSearchPath("src")]
         )
